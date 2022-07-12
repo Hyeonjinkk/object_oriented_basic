@@ -1,7 +1,9 @@
 package ch19;
 
 public class CarFactory {
+	// carNum static
 	private static int serialNum = 10000;
+	
 	private static CarFactory instance = new CarFactory();
 	
 	private CarFactory() {}
@@ -16,6 +18,8 @@ public class CarFactory {
 		
 		return instance;
 	} // end of getInstance
+	
+	/*-------------------------------------------------------*/
 	
 	// createCar
 	public Car createCar() {
